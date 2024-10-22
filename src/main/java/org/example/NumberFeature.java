@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.OddEven;
+//import org.example.OddEven;
 
 import java.util.ArrayList;
 import java.util.List;
