@@ -45,14 +45,14 @@ public class NumberFeature {
 
         List<Integer> binaryList = new ArrayList<>();
         for (int i = numberStr.length() - 1; i >= 0; i--) {
-            System.out.println(numberStr.length()-i);
+            //System.out.println(numberStr.length()-i);
             boolean CompareNumberWithLocation = isOddorEven(numberStr.length()-i) == isOddorEven(numberList.get(i));
             binaryList.add(CompareNumberWithLocation ? 1 : 0);
             result += (int)Math.pow(2,numberStr.length()-i-1)*binaryList.get(numberStr.length()-i-1);
         }
         //System.out.println(numberStr.length());
-        System.out.println(numberList);
-        System.out.println(binaryList);
+        //System.out.println(numberList);
+        //System.out.println(binaryList);
         System.out.println(result);
     }
 }
