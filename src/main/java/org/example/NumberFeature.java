@@ -4,9 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import org.example.OddEven;
+//import org.example.OddEven;
 
 public class NumberFeature {
+
+
+    public static int isOddorEven(int num){
+        int odd =0;
+        int even =0;
+        if ((num & 1) == 0) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+
     public static void main(String[] args) {
         int inputNumber; // 输入的数字
         int result = 0; // 输出结果
@@ -33,7 +46,7 @@ public class NumberFeature {
         List<Integer> binaryList = new ArrayList<>();
         for (int i = 0; i < numberStr.length(); i++) {
             //System.out.println(i);
-            boolean CompareNumberWithLocation = OddEven.isOddorEven(numberList.get(i)) == OddEven.isOddorEven(i+1);
+            boolean CompareNumberWithLocation = isOddorEven(numberList.get(i)) == isOddorEven(i+1);
             binaryList.add(CompareNumberWithLocation ? 1 : 0);
             result += (int)Math.pow(2,numberStr.length()-i-1)*binaryList.get(i);
         }
