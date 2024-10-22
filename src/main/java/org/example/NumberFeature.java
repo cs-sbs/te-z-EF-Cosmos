@@ -1,10 +1,10 @@
 package org.example;
 
-//import org.example.OddEven;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import org.example.OddEven;
 
 public class NumberFeature {
     public static void main(String[] args) {
